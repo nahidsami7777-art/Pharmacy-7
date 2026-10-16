@@ -1,0 +1,230 @@
+/* التنسيق العام للصفحة */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1F8F4;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+
+/* رأس الموقع */
+
+header {
+    background-color: #1B5E20;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+
+/* قائمة التنقل */
+
+nav {
+    background-color: #2E7D32;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #A5D6A7;
+    color: #1B5E20;
+}
+
+
+/* المحتوى الرئيسي */
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+
+/* الأقسام */
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-right: 5px solid #43A047;
+}
+
+
+/* العناوين */
+
+h2 {
+    color: #2E7D32;
+    margin-top: 0;
+}
+
+h3 {
+    color: #388E3C;
+}
+
+
+/* القوائم */
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* جدول الأدوية */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #2E7D32;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #C8E6C9;
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #F1F8E9;
+}
+
+
+/* صناديق الخدمات */
+
+.service-box {
+    border-right: 5px solid #66BB6A;
+}
+
+
+/* التنبيه الصحي */
+
+.notice {
+    background-color: #FFF8E1;
+    border-right-color: #F9A825;
+}
+
+.notice h3 {
+    color: #8D6E00;
+}
+
+
+/* نموذج التواصل */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+input,
+select,
+textarea {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #A5D6A7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #66BB6A;
+}
+
+
+/* زر إرسال الرسالة */
+
+button {
+    background-color: #2E7D32;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1B5E20;
+}
+
+
+/* نهاية الموقع */
+
+footer {
+    background-color: #1B5E20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+/* تنسيق الموقع على الشاشات الصغيرة */
+
+@media screen and (max-width: 600px) {
+
+    main {
+        width: 92%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: block;
+        padding: 8px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+
+}
